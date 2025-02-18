@@ -7,10 +7,10 @@ body {
 
 @font-face {
   font-family: "clashDisplay";
-  src: url("https://github.com/HiruWithana/floatingPills/blob/main/Fonts/ClashDisplay-Semibold.eot");
-  src: url("https://github.com/HiruWithana/floatingPills/blob/main/Fonts/ClashDisplay-Semibold.woff2") format("woff2"),
-    url("https://github.com/HiruWithana/floatingPills/blob/main/Fonts/ClashDisplay-Semibold.woff") format("woff"),
-    url("https://github.com/HiruWithana/floatingPills/blob/main/Fonts/ClashDisplay-Semibold.ttf") format("truetype");
+  src: url("Fonts/ClashDisplay-Semibold.eot");
+  src: url("Fonts/ClashDisplay-Semibold.woff2") format("woff2"),
+    url("Fonts/ClashDisplay-Semibold.woff") format("woff"),
+    url("Fonts/ClashDisplay-Semibold.ttf") format("truetype");
 }
 
 .container {
