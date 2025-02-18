@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matter.js Example</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="heroSection w-screen h-screen bg-[#16181D] md:py-24 md:px-28 relative overflow-hidden">
+
+        <div class="relative h-full border flex justify-center items-center px-6 py-12 md:p-0">
+
+            <div id="matter-container" class="border border-white/10 h-full w-full">
+
+
+                <h1 class="title text-2xl md:text-7xl">
+                    Floating Pills made by the <br> Physics Engine <span class="text-orange-300">Matter JS</span>
+                </h1>
+
+            </div>
+
+
+
+            <!-- left top -->
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-8 left-2 md:-left-4 md:-top-4 animate-spinY">
+                <path
+                    d="M16.5 0C16.5 0 16.3243 9.25397 20.0352 12.9648C23.746 16.6757 33 16.5 33 16.5C33 16.5 23.746 16.3243 20.0352 20.0352C16.3243 23.746 16.5 33 16.5 33C16.5 33 16.6757 23.746 12.9648 20.0352C9.25397 16.3243 0 16.5 0 16.5C0 16.5 9.25397 16.6757 12.9648 12.9648C16.6757 9.25397 16.5 0 16.5 0Z"
+                    fill="#BDFE00" />
+            </svg>
+            <!-- right top -->
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-8 right-2 md:-right-4 md:-top-4 animate-spinY">
+                <path
+                    d="M16.5 0C16.5 0 16.3243 9.25397 20.0352 12.9648C23.746 16.6757 33 16.5 33 16.5C33 16.5 23.746 16.3243 20.0352 20.0352C16.3243 23.746 16.5 33 16.5 33C16.5 33 16.6757 23.746 12.9648 20.0352C9.25397 16.3243 0 16.5 0 16.5C0 16.5 9.25397 16.6757 12.9648 12.9648C16.6757 9.25397 16.5 0 16.5 0Z"
+                    fill="#BDFE00" />
+            </svg>
+            <!-- left bottom -->
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-8 left-2 md:-left-4 md:-bottom-4 animate-spinY">
+                <path
+                    d="M16.5 0C16.5 0 16.3243 9.25397 20.0352 12.9648C23.746 16.6757 33 16.5 33 16.5C33 16.5 23.746 16.3243 20.0352 20.0352C16.3243 23.746 16.5 33 16.5 33C16.5 33 16.6757 23.746 12.9648 20.0352C9.25397 16.3243 0 16.5 0 16.5C0 16.5 9.25397 16.6757 12.9648 12.9648C16.6757 9.25397 16.5 0 16.5 0Z"
+                    fill="#BDFE00" />
+            </svg>
+            <!-- right bottom -->
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-8 right-2 md:-right-4 md:-bottom-4 animate-spinY">
+                <path
+                    d="M16.5 0C16.5 0 16.3243 9.25397 20.0352 12.9648C23.746 16.6757 33 16.5 33 16.5C33 16.5 23.746 16.3243 20.0352 20.0352C16.3243 23.746 16.5 33 16.5 33C16.5 33 16.6757 23.746 12.9648 20.0352C9.25397 16.3243 0 16.5 0 16.5C0 16.5 9.25397 16.6757 12.9648 12.9648C16.6757 9.25397 16.5 0 16.5 0Z"
+                    fill="#BDFE00" />
+            </svg>
+
+
+
+
+        </div>
+
+        <!-- left -->
+        <div class="w-px h-full bg-white/10 absolute top-0 left-0 ml-6 md:ml-28"></div>
+        <!-- right -->
+        <div class="w-px h-full bg-white/10 absolute top-0 right-0 mr-6 md:mr-28"></div>
+        <!-- top -->
+        <div class="w-full h-px bg-white/10 absolute top-0 left-0 mt-12 md:mt-24"></div>
+        <!-- bottom -->
+        <div class="w-full h-px bg-white/10 absolute bottom-0 left-0 mb-12 md:mb-24"></div>
+
+    </div>
+
+
+    <div class="w-screen h-screen"></div>
+
+
+    <script src="matter.js"></script>
+
+</body>
+
+</html>

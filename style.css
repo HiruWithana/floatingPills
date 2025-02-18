@@ -1,0 +1,80 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "clashDisplay";
+  src: url("Fonts/ClashDisplay-Semibold.eot");
+  src: url("fonts/ClashDisplay-Semibold.woff2") format("woff2"),
+    url("fonts/ClashDisplay-Semibold.woff") format("woff"),
+    url("fonts/ClashDisplay-Semibold.ttf") format("truetype");
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#matter-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ced1dc;
+  font-family: "clashDisplay";
+  text-align: center;
+  white-space: nowrap;
+  user-select: none; /* Prevent text selection */
+  pointer-events: none; /* Disable mouse interactions */
+  z-index: 2;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ced1dc;
+    font-family: "clashDisplay";
+    text-align: center;
+    white-space: nowrap;
+    user-select: none; /* Prevent text selection */
+    pointer-events: none; /* Disable mouse interactions */
+    z-index: 2;
+  }
+}
+
+.mainImg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none; /* Prevent text selection */
+  pointer-events: none; /* Disable mouse interactions */
+  z-index: 0;
+}
+
+.animate-spinY {
+  animation: spinY 3s linear infinite;
+}
+
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
